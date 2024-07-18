@@ -1,0 +1,40 @@
+café: 7
+aveia: 3
+morangos: 3
+iogurte grego: 9
+mel: 4
+amêndoas: 4
+salada: 7
+robalo: 4
+massa integral: 2
+maçã: 5
+manteiga de amendoim: 5
+cenoura: 10
+couve-flor: 7
+cebola: 7
+courgete: 7
+bróculos: 7
+coxas de frango: 3
+quinoa: 2
+pepino: 3
+guacamole: 3
+frutos vermelhos: 2
+sementes de chia: 2
+coxas de peru: 1
+feijão preto: 3
+batata doce: 3
+queijo cottage: 3
+frutas: 3
+espinafres: 2
+abacate: 5
+proteína em pó: 2
+bife de atum: 1
+febras de porco: 2
+biscoitos de arroz: 3
+húmus: 2
+cenouras: 1
+arroz branco: 4
+salmão: 1
+lombo de vaca: 1
+peito de frango: 1
+ovo: 1
