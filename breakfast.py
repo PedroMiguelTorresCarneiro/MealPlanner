@@ -20,7 +20,7 @@ options = [
         "ingredients": [
             {"item": "panquecas", "quantity": 50, "unit": "g"},
             {"item": "fruta", "quantity": 1, "unit": "unidade"},
-            {"item": "iogurte magro", "quantity": 60, "unit": "g"},
+            {"item": "iogurte natural", "quantity": 60, "unit": "g"},
             {"item": "pasta proteica de chocolate", "quantity": 10, "unit": "g"}
         ]
     },
@@ -39,8 +39,8 @@ options = [
         "calories": 247, 
         "ingredients": [
             {"item": "pão", "quantity": 1, "unit": "unidade"},
-            {"item": "manteiga", "quantity": 10, "unit": "unidade"},
-            {"item": "fiambre", "quantity": 2, "unit": "fatias"}
+            {"item": "manteiga", "quantity": 10, "unit": "g"},
+            {"item": "fiambre", "quantity": 2, "unit": "fatia"}
         ]
     }
 ]

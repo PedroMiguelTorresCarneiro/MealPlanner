@@ -54,11 +54,11 @@ def getDinner(includeSoup=True):
             "meal": f"Sopa + {protein_choice['protein']} com {carb_choice['carb']}",
             "calories": 100 + protein_choice["calories"] + carb_choice["calories"],  # Assuming soup adds 100 calories
             "ingredients": [
-                {"item": "cenoura", "quantity": 2, "unit": "unidade"},
-                {"item": "couve-flor congelada", "quantity": 250, "unit": "g"},
-                {"item": "cebola", "quantity": 1, "unit": "unidade"},
-                {"item": "courgette", "quantity": 0.5, "unit": "unidade"},
-                {"item": "brócolos congelados", "quantity": 250, "unit": "g"}
+                {"item": "cenoura", "quantity": 0.5, "unit": "unidade"},
+                {"item": "couve-flor congelada", "quantity": 62.5, "unit": "g"},
+                {"item": "cebola", "quantity": 0.25, "unit": "unidade"},
+                {"item": "courgette", "quantity": 0.125, "unit": "unidade"},
+                {"item": "brócolos congelados", "quantity": 62.5, "unit": "g"}
             ] + protein_choice["ingredients"] + carb_choice["ingredients"]
         }
     else:

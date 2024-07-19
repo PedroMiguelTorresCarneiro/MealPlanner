@@ -36,7 +36,7 @@ frutas = [
     "pêssego", "nectarina", "cereja", "uvas", "framboesas", 
     "amoras", "mirtilos", "tangerina", "limão", "lima", "maracujá", 
     "papaia", "figo", "damasco", "toranja", "groselha", "goiaba", 
-    "cajú", "caqui", "carambola", "physalis"
+    "cajú", "caqui", "carambola", "physalis", "fruta"
     ]
 
 legumes = [

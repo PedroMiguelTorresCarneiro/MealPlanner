@@ -8,7 +8,7 @@ options = [
         "meal": "Iogurte natural com fruta e cornflakes 0%", 
         "calories": 222, 
         "ingredients": [
-            {"item": "iogurte grego", "quantity": 125, "unit": "g"},
+            {"item": "iogurte natural", "quantity": 125, "unit": "g"},
             {"item": "fruta", "quantity": 1, "unit": "unidade"},
             {"item": "cornflakes 0%", "quantity": 20, "unit": "g"}
         ]

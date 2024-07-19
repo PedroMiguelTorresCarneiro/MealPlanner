@@ -99,7 +99,7 @@ carb_options = [
     {
         "carb": "Batata", 
         "calories": 154, 
-        "ingredients": [{"item": "batata doce", "quantity": 200, "unit": "g"}]
+        "ingredients": [{"item": "batata", "quantity": 200, "unit": "g"}]
     },
     {
         "carb": "Cuscus", 
