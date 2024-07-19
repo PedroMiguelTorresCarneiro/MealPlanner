@@ -5,46 +5,39 @@ import random
 '''
 options = [
     {
-        "meal": "1 ovo cozido + 1/2 abacate", 
-        "calories": 180, 
+        "meal": "1 ovo cozido + fiambre", 
+        "calories": 110, 
         "ingredients": [
             {"item": "ovo", "quantity": 1, "unit": "unidade"},
-            {"item": "abacate", "quantity": 0.5, "unit": "unidade"}
+            {"item": "fiambre", "quantity": 2, "unit": "fatia"}
         ]
     },
     {
-        "meal": "Palitos de cenoura e pepino com guacamole", 
-        "calories": 150, 
+        "meal": "Iogurte natural com manteiga de amendoim", 
+        "calories": 132, 
         "ingredients": [
-            {"item": "cenoura", "quantity": 100, "unit": "g"},
-            {"item": "pepino", "quantity": 100, "unit": "g"},
-            {"item": "guacamole", "quantity": 50, "unit": "g"}
+            {"item": "iogurte natural", "quantity": 120, "unit": "g"},
+            {"item": "manteiga de amendoim", "quantity": 10, "unit": "g"}
         ]
     },
     {
-        "meal": "1 iogurte grego natural sem açúcar", 
-        "calories": 100, 
+        "meal": "Queijo fresco com doce de nmorango 0% açúcares", 
+        "calories": 122, 
         "ingredients": [
-            {"item": "iogurte grego", "quantity": 200, "unit": "g"}
+            {"item": "queijo fresco", "quantity": 1, "unit": "unidade"},
+            {"item": "doce de morango 0%", "quantity": 20, "unit": "g"}
         ]
     },
     {
-        "meal": "Biscoitos de arroz com húmus", 
-        "calories": 140, 
+        "meal": "Queijo com marmelada", 
+        "calories": 193, 
         "ingredients": [
-            {"item": "biscoitos de arroz", "quantity": 2, "unit": "unidades"},
-            {"item": "húmus", "quantity": 50, "unit": "g"}
-        ]
-    },
-    {
-        "meal": "Queijo cottage com frutas", 
-        "calories": 150, 
-        "ingredients": [
-            {"item": "queijo cottage", "quantity": 200, "unit": "g"},
-            {"item": "frutas", "quantity": 50, "unit": "g"}
+            {"item": "queijo", "quantity": 1, "unit": "fatia"},
+            {"item": "marmelada", "quantity": 1, "unit": "fatia"}
         ]
     }
 ]
+
 
 '''
    Function to get night snack

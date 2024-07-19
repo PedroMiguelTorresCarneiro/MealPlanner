@@ -5,44 +5,38 @@ import random
 '''
 options = [
     {
-        "meal": "Iogurte grego com mel e amêndoas", 
-        "calories": 178, 
+        "meal": "Iogurte natural com fruta e cornflakes 0%", 
+        "calories": 222, 
         "ingredients": [
-            {"item": "iogurte grego", "quantity": 200, "unit": "g"},
-            {"item": "mel", "quantity": 1, "unit": "colher de sopa"},
-            {"item": "amêndoas", "quantity": 30, "unit": "g"}
+            {"item": "iogurte grego", "quantity": 125, "unit": "g"},
+            {"item": "fruta", "quantity": 1, "unit": "unidade"},
+            {"item": "cornflakes 0%", "quantity": 20, "unit": "g"}
         ]
     },
     {
         "meal": "Maçã com manteiga de amendoim", 
-        "calories": 190, 
+        "calories": 264, 
         "ingredients": [
             {"item": "maçã", "quantity": 1, "unit": "unidade"},
-            {"item": "manteiga de amendoim", "quantity": 2, "unit": "colheres de sopa"}
+            {"item": "manteiga de amendoim", "quantity": 32, "unit": "g"}
         ]
     },
     {
-        "meal": "Cenouras com húmus", 
-        "calories": 140, 
+        "meal": "Queijo com marmelada", 
+        "calories": 193, 
         "ingredients": [
-            {"item": "cenouras", "quantity": 100, "unit": "g"},
-            {"item": "húmus", "quantity": 50, "unit": "g"}
+            {"item": "queijo", "quantity": 1, "unit": "fatia"},
+            {"item": "marmelada", "quantity": 1, "unit": "fatia"}
         ]
     },
     {
-        "meal": "Queijo cottage com frutas", 
-        "calories": 125, 
+        "meal": "Tostas com queijinho de barrar e fiambre + leite proteico", 
+        "calories": 260, 
         "ingredients": [
-            {"item": "queijo cottage", "quantity": 200, "unit": "g"},
-            {"item": "frutas", "quantity": 50, "unit": "g"}
-        ]
-    },
-    {
-        "meal": "Biscoitos de arroz com abacate", 
-        "calories": 130, 
-        "ingredients": [
-            {"item": "biscoitos de arroz", "quantity": 2, "unit": "unidades"},
-            {"item": "abacate", "quantity": 1, "unit": "unidade"}
+            {"item": "tostas", "quantity": 4, "unit": "unidade"},
+            {"item": "queijinho de barrar", "quantity": 1, "unit": "unidade"},
+            {"item": "fiambre", "quantity": 4, "unit": "fatia"},
+            {"item": "leite proteico", "quantity": 250, "unit": "g"}
         ]
     }
 ]

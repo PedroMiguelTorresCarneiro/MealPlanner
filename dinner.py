@@ -6,73 +6,28 @@ import random
 protein_options = [
     {
         "protein": "Peito de Frango", 
-        "calories": 165, 
+        "calories": 220, 
         "ingredients": [{"item": "peito de frango", "quantity": 200, "unit": "g"}]
     },
     {
-        "protein": "Coxas de Frango", 
-        "calories": 209, 
-        "ingredients": [{"item": "coxas de frango", "quantity": 200, "unit": "g"}]
-    },
-    {
-        "protein": "Peito de Peru", 
-        "calories": 135, 
+        "protein": "Bifes de Peru", 
+        "calories": 220, 
         "ingredients": [{"item": "peito de peru", "quantity": 200, "unit": "g"}]
     },
     {
-        "protein": "Coxas de Peru", 
-        "calories": 213, 
-        "ingredients": [{"item": "coxas de peru", "quantity": 200, "unit": "g"}]
-    },
-    {
-        "protein": "Lombo de Vaca", 
-        "calories": 250, 
-        "ingredients": [{"item": "lombo de vaca", "quantity": 200, "unit": "g"}]
-    },
-    {
-        "protein": "Bife de Vaca", 
-        "calories": 271, 
-        "ingredients": [{"item": "bife de vaca", "quantity": 200, "unit": "g"}]
-    },
-    {
-        "protein": "Bife de Atum", 
-        "calories": 184, 
-        "ingredients": [{"item": "bife de atum", "quantity": 200, "unit": "g"}]
-    },
-    {
-        "protein": "Salmão", 
-        "calories": 206, 
-        "ingredients": [{"item": "salmão", "quantity": 200, "unit": "g"}]
-    },
-    {
-        "protein": "Bacalhau", 
-        "calories": 82, 
-        "ingredients": [{"item": "bacalhau", "quantity": 200, "unit": "g"}]
-    },
-    {
         "protein": "Pescada", 
-        "calories": 96, 
+        "calories": 176, 
         "ingredients": [{"item": "pescada", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Dourada", 
-        "calories": 82, 
+        "calories": 190, 
         "ingredients": [{"item": "dourada", "quantity": 200, "unit": "g"}]
     },
     {
-        "protein": "Robalo", 
-        "calories": 97, 
-        "ingredients": [{"item": "robalo", "quantity": 200, "unit": "g"}]
-    },
-    {
-        "protein": "Lombo de Porco", 
-        "calories": 242, 
-        "ingredients": [{"item": "lombo de porco", "quantity": 200, "unit": "g"}]
-    },
-    {
-        "protein": "Febras de Porco", 
-        "calories": 215, 
-        "ingredients": [{"item": "febras de porco", "quantity": 200, "unit": "g"}]
+        "protein": "Carne picada de frango e chouriço", 
+        "calories": 280, 
+        "ingredients": [{"item": "carne picada com chouriço", "quantity": 200, "unit": "g"}]
     }
 ]
 
@@ -81,29 +36,9 @@ protein_options = [
 '''
 carb_options = [
     {
-        "carb": "Arroz Branco", 
-        "calories": 130, 
-        "ingredients": [{"item": "arroz branco", "quantity": 150, "unit": "g"}]
-    },
-    {
-        "carb": "Massa Integral", 
-        "calories": 124, 
-        "ingredients": [{"item": "massa integral", "quantity": 150, "unit": "g"}]
-    },
-    {
-        "carb": "Batata Doce", 
-        "calories": 112, 
-        "ingredients": [{"item": "batata doce", "quantity": 200, "unit": "g"}]
-    },
-    {
-        "carb": "Quinoa", 
-        "calories": 120, 
-        "ingredients": [{"item": "quinoa", "quantity": 150, "unit": "g"}]
-    },
-    {
-        "carb": "Feijão Preto", 
-        "calories": 150, 
-        "ingredients": [{"item": "feijão preto", "quantity": 150, "unit": "g"}]
+        "carb": "Fruta", 
+        "calories": 80, 
+        "ingredients": [{"item": "fruta", "quantity": 1, "unit": "unidade"}]
     }
 ]
 
@@ -119,11 +54,11 @@ def getDinner(includeSoup=True):
             "meal": f"Sopa + {protein_choice['protein']} com {carb_choice['carb']}",
             "calories": 100 + protein_choice["calories"] + carb_choice["calories"],  # Assuming soup adds 100 calories
             "ingredients": [
-                {"item": "cenoura", "quantity": 100, "unit": "g"},
-                {"item": "couve-flor", "quantity": 100, "unit": "g"},
-                {"item": "cebola", "quantity": 50, "unit": "g"},
-                {"item": "courgete", "quantity": 100, "unit": "g"},
-                {"item": "brócolos", "quantity": 100, "unit": "g"}
+                {"item": "cenoura", "quantity": 2, "unit": "unidade"},
+                {"item": "couve-flor congelada", "quantity": 250, "unit": "g"},
+                {"item": "cebola", "quantity": 1, "unit": "unidade"},
+                {"item": "courgette", "quantity": 0.5, "unit": "unidade"},
+                {"item": "brócolos congelados", "quantity": 250, "unit": "g"}
             ] + protein_choice["ingredients"] + carb_choice["ingredients"]
         }
     else:

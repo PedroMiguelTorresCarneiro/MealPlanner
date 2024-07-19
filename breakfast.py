@@ -5,49 +5,42 @@ import random
 '''
 options = [
     {
-        "meal": "Omelete de 3 ovos com espinafres, cogumelos e queijo feta", 
-        "calories": 223, 
+        "meal": "Ovos estrelados com pão e fiambre", 
+        "calories": 473, 
         "ingredients": [
-            {"item": "ovos", "quantity": 3, "unit": "unidades"},
-            {"item": "espinafres", "quantity": 50, "unit": "g"},
-            {"item": "cogumelos", "quantity": 50, "unit": "g"},
-            {"item": "queijo feta", "quantity": 30, "unit": "g"}
+            {"item": "ovos", "quantity": 2, "unit": "unidade"},
+            {"item": "pão", "quantity": 1, "unit": "unidade"},
+            {"item": "fiambre", "quantity": 4, "unit": "fatia"},
+            {"item": "azeite", "quantity": 7, "unit": "g"}
         ]
     },
     {
-        "meal": "Batido de espinafres, abacate, iogurte grego e proteína em pó", 
-        "calories": 213, 
+        "meal": "Panquecas de proteina com iogurte natural e fruta", 
+        "calories": 358, 
         "ingredients": [
-            {"item": "espinafres", "quantity": 50, "unit": "g"},
-            {"item": "abacate", "quantity": 1, "unit": "unidade"},
-            {"item": "iogurte grego", "quantity": 200, "unit": "g"},
-            {"item": "proteína em pó", "quantity": 30, "unit": "g"}
+            {"item": "panquecas", "quantity": 50, "unit": "g"},
+            {"item": "fruta", "quantity": 1, "unit": "unidade"},
+            {"item": "iogurte magro", "quantity": 60, "unit": "g"},
+            {"item": "pasta proteica de chocolate", "quantity": 10, "unit": "g"}
         ]
     },
     {
-        "meal": "Iogurte grego com frutos vermelhos e sementes de chia", 
-        "calories": 190, 
+        "meal": "Papas de aveia com fruta e cacau", 
+        "calories": 257, 
         "ingredients": [
-            {"item": "iogurte grego", "quantity": 200, "unit": "g"},
-            {"item": "frutos vermelhos", "quantity": 50, "unit": "g"},
-            {"item": "sementes de chia", "quantity": 10, "unit": "g"}
+            {"item": "aveia", "quantity": 25, "unit": "g"},
+            {"item": "fruta", "quantity": 1, "unit": "unidade"},
+            {"item": "leite magro/aveia", "quantity": 80, "unit": "ml"},
+            {"item": "pasta proteica de chocolate", "quantity": 10, "unit": "g"}
         ]
     },
     {
-        "meal": "Torrada de abacate com ovo escalfado", 
-        "calories": 260, 
+        "meal": "Pão torrado com manteiga e fiambre", 
+        "calories": 247, 
         "ingredients": [
-            {"item": "abacate", "quantity": 1, "unit": "unidade"},
-            {"item": "ovo", "quantity": 1, "unit": "unidade"},
-            {"item": "pão", "quantity": 2, "unit": "fatias"}
-        ]
-    },
-    {
-        "meal": "Papas de aveia com morangos fatiados", 
-        "calories": 196, 
-        "ingredients": [
-            {"item": "aveia", "quantity": 50, "unit": "g"},
-            {"item": "morangos", "quantity": 100, "unit": "g"}
+            {"item": "pão", "quantity": 1, "unit": "unidade"},
+            {"item": "manteiga", "quantity": 10, "unit": "unidade"},
+            {"item": "fiambre", "quantity": 2, "unit": "fatias"}
         ]
     }
 ]
