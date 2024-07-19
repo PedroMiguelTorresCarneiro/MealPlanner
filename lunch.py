@@ -104,7 +104,7 @@ carb_options = [
     {
         "carb": "Cuscus", 
         "calories": 168, 
-        "ingredients": [{"item": "quinoa", "quantity": 150, "unit": "g"}]
+        "ingredients": [{"item": "Cuscus", "quantity": 150, "unit": "g"}]
     },
     {
         "carb": "Feijão Preto e arroz branco", 

@@ -25,27 +25,46 @@ def dinner():
 def night_snack():
     return ns.getNightSnack()
 
-# Função para gerar refeições diárias
-def daily_meal():
-    breakfast_meal = breakfast()
-    return {
-        "Pequeno-Almoço": breakfast_meal,
-        "Lanche da Manhã": snack(),
-        "Almoço": lunch(),
-        "Lanche da Tarde": snack(),
-        "Jantar": dinner(),
-        "Lanche Noturno": night_snack()
-    }
+# Função para gerar refeições diárias com limite de calorias
+def daily_meal(calorie_limit=1800):
+    while True:
+        breakfast_meal = breakfast()
+        morning_snack = snack()
+        lunch_meal = lunch()
+        afternoon_snack = snack()
+        dinner_meal = dinner()
+        night_snack_meal = night_snack()
 
-def weekly_meal():
+        total_calories = (
+            breakfast_meal['calories'] + 
+            morning_snack['calories'] + 
+            lunch_meal['calories'] + 
+            afternoon_snack['calories'] + 
+            dinner_meal['calories'] + 
+            night_snack_meal['calories']
+        )
+
+        if total_calories <= calorie_limit:
+            print(f"Total de calorias: {total_calories} cal")
+            return {
+                "Pequeno-Almoço": breakfast_meal,
+                "Lanche da Manhã": morning_snack,
+                "Almoço": lunch_meal,
+                "Lanche da Tarde": afternoon_snack,
+                "Jantar": dinner_meal,
+                "Lanche Noturno": night_snack_meal
+            }
+
+# Função para gerar refeições semanais
+def weekly_meal(calorie_limit=1800):
     days = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"]
-    return {day: daily_meal() for day in days}
+    return {day: daily_meal(calorie_limit) for day in days}
 
 def wrap_text(text, width=30):
     return "\n".join(textwrap.wrap(text, width))
 
-def create_combined_df():
-    weekly_meals = weekly_meal()
+def create_combined_df(calorie_limit=1800):
+    weekly_meals = weekly_meal(calorie_limit)
     combined_meals = {"Refeição": []}
     days = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"]
     
@@ -102,15 +121,17 @@ def save_table_as_image(df, filename="meal_plan.png"):
 
 # Exemplos de uso
 print("Refeições semanais:")
-combined_df = create_combined_df()
+combined_df = create_combined_df(calorie_limit=1800)
 print(combined_df)
 save_table_as_image(combined_df)
 
-weekly_meals = weekly_meal()
+weekly_meals = weekly_meal(calorie_limit=1800)
 num_people = 2  # Número de pessoas para o plano de refeições
 shopping_list = generate_shopping_list(weekly_meals, num_people)
 save_shopping_list(shopping_list)
 #print("\nLista de compras:")
-#for item, quantities in shopping_list.items():
-#    for unit, quantity in quantities.items():
-#        print(f"{item}: {quantity} {unit}")
+#for category, items in shopping_list.items():
+#    print(f"\n{category}:")
+#    for item, quantities in items.items():
+#        for unit, quantity in quantities.items():
+#            print(f"{item}: {quantity} {unit}")
