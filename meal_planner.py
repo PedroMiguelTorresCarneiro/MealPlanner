@@ -110,7 +110,7 @@ weekly_meals = weekly_meal()
 num_people = 2  # Número de pessoas para o plano de refeições
 shopping_list = generate_shopping_list(weekly_meals, num_people)
 save_shopping_list(shopping_list)
-print("\nLista de compras:")
-for item, quantities in shopping_list.items():
-    for unit, quantity in quantities.items():
-        print(f"{item}: {quantity} {unit}")
+#print("\nLista de compras:")
+#for item, quantities in shopping_list.items():
+#    for unit, quantity in quantities.items():
+#        print(f"{item}: {quantity} {unit}")
