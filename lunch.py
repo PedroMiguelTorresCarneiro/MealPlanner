@@ -57,7 +57,7 @@ protein_options = [
     {
         "protein": "Lulas", 
         "calories": 170, 
-        "ingredients": [{"item": "robalo", "quantity": 200, "unit": "g"}]
+        "ingredients": [{"item": "lulas", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Lombo de Porco", 

@@ -30,7 +30,7 @@ options = [
         "ingredients": [
             {"item": "aveia", "quantity": 25, "unit": "g"},
             {"item": "fruta", "quantity": 1, "unit": "unidade"},
-            {"item": "leite magro/aveia", "quantity": 80, "unit": "ml"},
+            {"item": "leite", "quantity": 80, "unit": "ml"},
             {"item": "pasta proteica de chocolate", "quantity": 10, "unit": "g"}
         ]
     },
