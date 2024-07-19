@@ -7,7 +7,7 @@ import snack as s
 import lunch as l
 import dinner as d
 import night_snack as ns
-from collections import defaultdict
+from shoppingList import generate_shopping_list, save_shopping_list
 
 # Funções de refeição
 def breakfast():
@@ -79,7 +79,7 @@ def save_table_as_image(df, filename="meal_plan.png"):
     the_table.set_fontsize(10)
     the_table.scale(1.0, 1.5)  # Aumentar o tamanho das linhas e ajustar o tamanho da tabela
 
-    # Ajustar largura das colunas e altura das linhas e cores das células
+    # Ajustar largura das colunas, altura das linhas e cores das células
     for key, cell in the_table.get_celld().items():
         cell.set_text_props(wrap=True)
         cell.set_height(0.1)  # Definir a altura das linhas
@@ -100,21 +100,6 @@ def save_table_as_image(df, filename="meal_plan.png"):
     plt.savefig(filename, bbox_inches='tight', dpi=300)  # Salvar a tabela como imagem
     plt.close()
 
-def generate_shopping_list(weekly_meals):
-    shopping_list = defaultdict(int)
-    
-    for day, meals in weekly_meals.items():
-        for meal in meals.values():
-            for ingredient in meal['ingredients']:
-                shopping_list[ingredient] += 1  # Supondo que cada item seja contado uma vez por refeição
-    
-    return dict(shopping_list)
-
-def save_shopping_list(shopping_list, filename="shopping_list.txt"):
-    with open(filename, 'w') as file:
-        for item, quantity in shopping_list.items():
-            file.write(f"{item}: {quantity}\n")
-
 # Exemplos de uso
 print("Refeições semanais:")
 combined_df = create_combined_df()
@@ -122,8 +107,10 @@ print(combined_df)
 save_table_as_image(combined_df)
 
 weekly_meals = weekly_meal()
-shopping_list = generate_shopping_list(weekly_meals)
+num_people = 2  # Número de pessoas para o plano de refeições
+shopping_list = generate_shopping_list(weekly_meals, num_people)
 save_shopping_list(shopping_list)
 print("\nLista de compras:")
-for item, quantity in shopping_list.items():
-    print(f"{item}: {quantity}")
+for item, quantities in shopping_list.items():
+    for unit, quantity in quantities.items():
+        print(f"{item}: {quantity} {unit}")

@@ -7,72 +7,72 @@ protein_options = [
     {
         "protein": "Peito de Frango", 
         "calories": 165, 
-        "ingredients": ["peito de frango"]
+        "ingredients": [{"item": "peito de frango", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Coxas de Frango", 
         "calories": 209, 
-        "ingredients": ["coxas de frango"]
+        "ingredients": [{"item": "coxas de frango", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Peito de Peru", 
         "calories": 135, 
-        "ingredients": ["peito de peru"]
+        "ingredients": [{"item": "peito de peru", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Coxas de Peru", 
         "calories": 213, 
-        "ingredients": ["coxas de peru"]
+        "ingredients": [{"item": "coxas de peru", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Lombo de Vaca", 
         "calories": 250, 
-        "ingredients": ["lombo de vaca"]
+        "ingredients": [{"item": "lombo de vaca", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Bife de Vaca", 
         "calories": 271, 
-        "ingredients": ["bife de vaca"]
+        "ingredients": [{"item": "bife de vaca", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Bife de Atum", 
         "calories": 184, 
-        "ingredients": ["bife de atum"]
+        "ingredients": [{"item": "bife de atum", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Salmão", 
         "calories": 206, 
-        "ingredients": ["salmão"]
+        "ingredients": [{"item": "salmão", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Bacalhau", 
         "calories": 82, 
-        "ingredients": ["bacalhau"]
+        "ingredients": [{"item": "bacalhau", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Pescada", 
         "calories": 96, 
-        "ingredients": ["pescada"]
+        "ingredients": [{"item": "pescada", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Dourada", 
         "calories": 82, 
-        "ingredients": ["dourada"]
+        "ingredients": [{"item": "dourada", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Robalo", 
         "calories": 97, 
-        "ingredients": ["robalo"]
+        "ingredients": [{"item": "robalo", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Lombo de Porco", 
         "calories": 242, 
-        "ingredients": ["lombo de porco"]
+        "ingredients": [{"item": "lombo de porco", "quantity": 200, "unit": "g"}]
     },
     {
         "protein": "Febras de Porco", 
         "calories": 215, 
-        "ingredients": ["febras de porco"]
+        "ingredients": [{"item": "febras de porco", "quantity": 200, "unit": "g"}]
     }
 ]
 
@@ -83,27 +83,27 @@ carb_options = [
     {
         "carb": "Arroz Branco", 
         "calories": 130, 
-        "ingredients": ["arroz branco"]
+        "ingredients": [{"item": "arroz branco", "quantity": 150, "unit": "g"}]
     },
     {
         "carb": "Massa Integral", 
         "calories": 124, 
-        "ingredients": ["massa integral"]
+        "ingredients": [{"item": "massa integral", "quantity": 150, "unit": "g"}]
     },
     {
         "carb": "Batata Doce", 
         "calories": 112, 
-        "ingredients": ["batata doce"]
+        "ingredients": [{"item": "batata doce", "quantity": 200, "unit": "g"}]
     },
     {
         "carb": "Quinoa", 
         "calories": 120, 
-        "ingredients": ["quinoa"]
+        "ingredients": [{"item": "quinoa", "quantity": 150, "unit": "g"}]
     },
     {
         "carb": "Feijão Preto", 
         "calories": 150, 
-        "ingredients": ["feijão preto"]
+        "ingredients": [{"item": "feijão preto", "quantity": 150, "unit": "g"}]
     }
 ]
 
@@ -116,7 +116,7 @@ def getLunch():
     return {
         "meal": f"Salada com {protein_choice['protein']} e {carb_choice['carb']}",
         "calories": 0 + protein_choice["calories"] + carb_choice["calories"],  # Assuming salad adds 0 calories
-        "ingredients": ["salada"] + protein_choice["ingredients"] + carb_choice["ingredients"]
+        "ingredients": [{"item": "salada", "quantity": 1, "unit": "porção"}] + protein_choice["ingredients"] + carb_choice["ingredients"]
     }
 
 '''

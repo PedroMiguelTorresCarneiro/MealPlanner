@@ -7,27 +7,42 @@ options = [
     {
         "meal": "1 ovo cozido + 1/2 abacate", 
         "calories": 180, 
-        "ingredients": ["ovo", "abacate"]
+        "ingredients": [
+            {"item": "ovo", "quantity": 1, "unit": "unidade"},
+            {"item": "abacate", "quantity": 0.5, "unit": "unidade"}
+        ]
     },
     {
         "meal": "Palitos de cenoura e pepino com guacamole", 
         "calories": 150, 
-        "ingredients": ["cenoura", "pepino", "guacamole"]
+        "ingredients": [
+            {"item": "cenoura", "quantity": 100, "unit": "g"},
+            {"item": "pepino", "quantity": 100, "unit": "g"},
+            {"item": "guacamole", "quantity": 50, "unit": "g"}
+        ]
     },
     {
         "meal": "1 iogurte grego natural sem açúcar", 
         "calories": 100, 
-        "ingredients": ["iogurte grego"]
+        "ingredients": [
+            {"item": "iogurte grego", "quantity": 200, "unit": "g"}
+        ]
     },
     {
         "meal": "Biscoitos de arroz com húmus", 
         "calories": 140, 
-        "ingredients": ["biscoitos de arroz", "húmus"]
+        "ingredients": [
+            {"item": "biscoitos de arroz", "quantity": 2, "unit": "unidades"},
+            {"item": "húmus", "quantity": 50, "unit": "g"}
+        ]
     },
     {
         "meal": "Queijo cottage com frutas", 
         "calories": 150, 
-        "ingredients": ["queijo cottage", "frutas"]
+        "ingredients": [
+            {"item": "queijo cottage", "quantity": 200, "unit": "g"},
+            {"item": "frutas", "quantity": 50, "unit": "g"}
+        ]
     }
 ]
 
