@@ -62,7 +62,7 @@ def getBreakfast(alwaysCoffee=True):
         return {
             "meal": f"Café + {meal['meal']}",
             "calories": meal["calories"],  # Assuming coffee adds 0 calories
-            "ingredients": [{"item": "café", "quantity": 1, "unit": "xícara"}] + meal["ingredients"]
+            "ingredients": [{"item": "café", "quantity": 3, "unit": "g"}] + meal["ingredients"]
         }
     else:
         return meal
