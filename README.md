@@ -1,4 +1,4 @@
-# Planeador de Refeições
+# MEAL PLANNER
 
 Este programa Python gera:
 
